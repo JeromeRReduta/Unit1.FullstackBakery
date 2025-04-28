@@ -201,6 +201,7 @@ main {
   flex-direction: column;
   background-color: orange;
   gap: 3em;
+  padding: 1.5em 0 1.5em 0;
 }
 
 .right-main {
