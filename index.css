@@ -1,0 +1,253 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Basic info & proportions */
+@font-face {
+  font-family: "Satoshi Light";
+  src: url("Satoshi-Light.woff");
+}
+
+body {
+  font-family: "Satoshi Light";
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  background-color: purple;
+  border: 0% 2% 0% 2%;
+  width: 100vw;
+  height: 100vh;
+}
+
+header,
+footer,
+main {
+  display: flex;
+}
+
+header,
+footer {
+  flex: 5 1 5vh;
+}
+
+main {
+  flex: 90 1 90vh;
+}
+
+/* Header */
+header {
+  background-color: red;
+}
+
+.brand {
+  flex: 20 1 20vw;
+  background-color: orange;
+  text-align: center;
+  padding: 1em 0 1em 0;
+}
+
+.links {
+  display: flex;
+  flex: 80 1 80vw;
+  gap: 2rem;
+  background-color: green;
+  padding: 0 1em 0 1em;
+}
+
+.links a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Main */
+main {
+  background-color: yellow;
+}
+
+.left-main {
+  display: flex;
+  flex: 20 1 20vw;
+  background-color: red;
+}
+
+.left-main ul {
+  display: flex;
+  flex-direction: column;
+  background-color: orange;
+  gap: 3em;
+}
+
+.right-main {
+  flex: 80 1 80vw;
+  background-color: blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0.5em;
+  padding: 0 1em 0 1em;
+}
+
+.right-main * {
+  margin: 0.5em;
+}
+
+.right-main h1 {
+  background-color: purple;
+  color: white;
+}
+
+.right-main p {
+  background-color: white;
+}
+.right-main figure {
+  background-color: green;
+  color: white;
+}
+
+/* Footer */
+footer {
+  background-color: black;
+  color: white;
+}
+
+.center-flex {
+  justify-content: center;
+  align-items: center;
+}
+
+.right-flex {
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.left-flex {
+  justify-content: flex-start;
+  align-items: center;
+}
